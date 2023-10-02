@@ -6,6 +6,7 @@ $username = $_POST['reg_username'];
 $password = password_hash($_POST['reg_password'], PASSWORD_DEFAULT);
 $_SESSION["username"] = $username;
 
+/** @var string $conn */
 $check_query = $conn->prepare("SELECT * FROM users WHERE username = ?");
 $check_query->bind_param("s", $username);
 $check_query->execute();

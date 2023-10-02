@@ -21,7 +21,7 @@ if (!isset($_SESSION['username'])) {
                     <a href="logout.php" class="btn btn-danger">Выйти</a>
                 </div>
             </div>
-            <form action="reviews.php" method="post">
+            <form action="../reviews.php" method="post">
                 <div class="form-group">
                     <label for="exampleFormControlInput1">Email address. Напишите Ваш email для обратной связи</label>
                     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" name="email" required>
@@ -55,8 +55,13 @@ if (!isset($_SESSION['username'])) {
                         Принимаю согласие на обработку данных
                         </label>
                     </div>
-                    <button type="submit" class="btn btn-success" style = "margin-top: 1em;">Отправить</button>
-                    <button type="reset" class="btn btn-danger" style = "margin-top: 1em;">Отчистить</button>
+                    <div class="buttons_container d-flex justify-content-between">
+                        <div class="buttons">
+                            <button type="submit" class="btn btn-success" style = "margin-top: 1em;">Отправить</button>
+                            <button type="reset" class="btn btn-danger" style = "margin-top: 1em;">Отчистить</button>
+                        </div>
+                            <a href="/forms/reviewsList.php" class="btn btn-info"style = "margin-top: 1em;">Ваши отзывы</a>
+                    </div>
                 </div>
             </form>
         </div>

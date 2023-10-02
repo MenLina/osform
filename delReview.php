@@ -4,7 +4,8 @@ include('db.php');
 if ($_SERVER['REQUEST_METHOD'] === 'GET') {
     if(isset($_GET['id'])){
         $id = $_GET['id'];
-        
+
+        /** @var string $conn */
         $stmt = $conn->prepare("DELETE FROM reviews WHERE id=?");
         $stmt->bind_param("i", $id);
         $stmt->execute();

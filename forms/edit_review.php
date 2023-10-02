@@ -12,7 +12,8 @@
 include('../db.php');
 if(isset($_GET['id'])) {
     $id = $_GET['id'];
- 
+
+    /** @var string $conn */
     $stmt = $conn->prepare("SELECT * FROM reviews WHERE id=?");
     $stmt->bind_param("i", $id);
     $stmt->execute();
