@@ -2,6 +2,6 @@
 $host = "localhost";
 $username = "root";
 $password = "";
-$dbName = "osform";
+$dbName = "osForm";
 
 $conn = new mysqli($host,$username,$password,$dbName);

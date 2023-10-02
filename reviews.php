@@ -7,6 +7,7 @@ $category = $_POST['category'];
 $mark = $_POST['inlineRadioOptions'];
 $review	= $_POST['review'];
 $user = $_SESSION['username'];
+/** @var string $conn */
 $stmt = $conn->prepare("INSERT INTO reviews (email, category, mark, review, user) VALUES (?, ?, ?, ?, ?)");
 $stmt->bind_param("ssiss", $email, $category, $mark, $review, $user);
 $stmt->execute();

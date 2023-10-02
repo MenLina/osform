@@ -9,7 +9,7 @@ if (!isset($_SESSION['username'])) {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>CRUD для Пользователей</title>
+        <title>Ваши отзывы</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     </head>
     <body>
@@ -37,6 +37,7 @@ if (!isset($_SESSION['username'])) {
                             include('../db.php');
                             session_start();
                             $username = $_SESSION['username'];
+                            /** @var string $conn */
                             $stmt = $conn->prepare("SELECT * FROM reviews WHERE user=?");
                             $stmt->bind_param("s", $username);
                             $stmt->execute();
@@ -65,6 +66,7 @@ if (!isset($_SESSION['username'])) {
                     </table>
                 </div>
             </div>
+            <a href="/forms/reviewform.php" class="btn btn-success" style = "margin-top: 1em;">Создать новый отзыв</a>
         </div>
     </body>
 </html>
