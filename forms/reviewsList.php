@@ -52,7 +52,7 @@ if (!isset($_SESSION['username'])) {
                                         <td>{$row['category']}</td>
                                         <td>{$row['mark']}</td>
                                         <td>{$row['review']}</td>
-                                        <td><a href='/forms/edit_review.php?id=$id' class='btn btn-primary'>Редактировать</a></td>
+                                        <td><a href='/forms/editReview.php?id=$id' class='btn btn-primary'>Редактировать</a></td>
                                         <td><a href='../delReview.php?id=$id' class='btn btn-danger'>Удалить</a></td>
                                     </tr>";
                                 }
@@ -66,7 +66,7 @@ if (!isset($_SESSION['username'])) {
                     </table>
                 </div>
             </div>
-            <a href="/forms/reviewform.php" class="btn btn-success" style = "margin-top: 1em;">Создать новый отзыв</a>
+            <a href="/forms/reviewForm.php" class="btn btn-success" style = "margin-top: 1em;">Создать новый отзыв</a>
         </div>
     </body>
 </html>

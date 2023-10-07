@@ -21,7 +21,7 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Войти</button>
                     <span>Нет аккаунта?</span>
-                    <a href="/forms/formreg.php" class="btn btn-link" style="text-decoration:underline">Зарегистрироваться</a>
+                    <a href="/forms/formReg.php" class="btn btn-link" style="text-decoration:underline">Зарегистрироваться</a>
                 </form>
             </div>
         </div>
