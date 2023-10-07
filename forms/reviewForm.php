@@ -50,9 +50,21 @@ if (!isset($_SESSION['username'])) {
                     <label for="exampleFormControlTextarea1">Напишите отзыв</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="review"></textarea>
                     <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
+                        <input name="agreeTermsCheck" class="form-check-input" type="checkbox" value="" id="defaultCheck1" required>
                         <label class="form-check-label" for="defaultCheck1">
                         Принимаю согласие на обработку данных
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input name="emailCheck" class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                        <label class="form-check-label" for="defaultCheck2">
+                            email рассылка
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input name="fastAnswerCheck" class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+                        <label class="form-check-label" for="defaultCheck3">
+                            Нужен срочный ответ
                         </label>
                     </div>
                     <div class="buttons_container d-flex justify-content-between">
