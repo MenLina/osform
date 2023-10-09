@@ -10,7 +10,7 @@
     <div class="container">
         <h1>Спасибо за Ваш отзыв!</h1>
         <a href="/forms/reviewsList.php" class="btn btn-success">Ваши отзывы</a>
-        <a href="logout.php" class="btn btn-danger">Выйти</a>
+        <a href="../logout.php" class="btn btn-danger">Выйти</a>
     </div>
 </body>
 </html>
